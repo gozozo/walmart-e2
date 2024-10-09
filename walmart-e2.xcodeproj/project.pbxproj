@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		6014AA752CB629DB00D55254 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6014AA742CB629DB00D55254 /* AppDelegate.swift */; };
 		6014AA772CB629DB00D55254 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6014AA762CB629DB00D55254 /* SceneDelegate.swift */; };
-		6014AA792CB629DB00D55254 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6014AA782CB629DB00D55254 /* ViewController.swift */; };
 		6014AA7C2CB629DB00D55254 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6014AA7B2CB629DB00D55254 /* Base */; };
 		6014AA7E2CB629DD00D55254 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6014AA7D2CB629DD00D55254 /* Assets.xcassets */; };
 		6014AA812CB629DD00D55254 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6014AA802CB629DD00D55254 /* Base */; };
 		6014AA8C2CB629DE00D55254 /* walmart_e2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6014AA8B2CB629DE00D55254 /* walmart_e2Tests.swift */; };
 		6014AA962CB629DE00D55254 /* walmart_e2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6014AA952CB629DE00D55254 /* walmart_e2UITests.swift */; };
 		6014AA982CB629DE00D55254 /* walmart_e2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6014AA972CB629DE00D55254 /* walmart_e2UITestsLaunchTests.swift */; };
+		6014AAA92CB6308D00D55254 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6014AAA82CB6308D00D55254 /* ProductListViewController.swift */; };
+		6014AAAC2CB637D500D55254 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6014AAAB2CB637D500D55254 /* ProductTableViewCell.swift */; };
+		6014AAAE2CB6380500D55254 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6014AAAD2CB6380500D55254 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,6 @@
 		6014AA712CB629DB00D55254 /* walmart-e2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "walmart-e2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6014AA742CB629DB00D55254 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6014AA762CB629DB00D55254 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6014AA782CB629DB00D55254 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6014AA7B2CB629DB00D55254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6014AA7D2CB629DD00D55254 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6014AA802CB629DD00D55254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		6014AA912CB629DE00D55254 /* walmart-e2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "walmart-e2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6014AA952CB629DE00D55254 /* walmart_e2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walmart_e2UITests.swift; sourceTree = "<group>"; };
 		6014AA972CB629DE00D55254 /* walmart_e2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walmart_e2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6014AAA82CB6308D00D55254 /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		6014AAAB2CB637D500D55254 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		6014AAAD2CB6380500D55254 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,10 @@
 		6014AA732CB629DB00D55254 /* walmart-e2 */ = {
 			isa = PBXGroup;
 			children = (
+				6014AAA72CB62FD000D55254 /* enteties */,
+				6014AAA42CB62EE500D55254 /* modules */,
 				6014AA742CB629DB00D55254 /* AppDelegate.swift */,
 				6014AA762CB629DB00D55254 /* SceneDelegate.swift */,
-				6014AA782CB629DB00D55254 /* ViewController.swift */,
 				6014AA7A2CB629DB00D55254 /* Main.storyboard */,
 				6014AA7D2CB629DD00D55254 /* Assets.xcassets */,
 				6014AA7F2CB629DD00D55254 /* LaunchScreen.storyboard */,
@@ -125,6 +130,47 @@
 				6014AA972CB629DE00D55254 /* walmart_e2UITestsLaunchTests.swift */,
 			);
 			path = "walmart-e2UITests";
+			sourceTree = "<group>";
+		};
+		6014AAA42CB62EE500D55254 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				6014AAA62CB62F0B00D55254 /* product_detail */,
+				6014AAA52CB62EF200D55254 /* product_list */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		6014AAA52CB62EF200D55254 /* product_list */ = {
+			isa = PBXGroup;
+			children = (
+				6014AAAA2CB6367E00D55254 /* view */,
+			);
+			path = product_list;
+			sourceTree = "<group>";
+		};
+		6014AAA62CB62F0B00D55254 /* product_detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = product_detail;
+			sourceTree = "<group>";
+		};
+		6014AAA72CB62FD000D55254 /* enteties */ = {
+			isa = PBXGroup;
+			children = (
+				6014AAAD2CB6380500D55254 /* Product.swift */,
+			);
+			path = enteties;
+			sourceTree = "<group>";
+		};
+		6014AAAA2CB6367E00D55254 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				6014AAA82CB6308D00D55254 /* ProductListViewController.swift */,
+				6014AAAB2CB637D500D55254 /* ProductTableViewCell.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +304,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6014AA792CB629DB00D55254 /* ViewController.swift in Sources */,
 				6014AA752CB629DB00D55254 /* AppDelegate.swift in Sources */,
+				6014AAAC2CB637D500D55254 /* ProductTableViewCell.swift in Sources */,
+				6014AAAE2CB6380500D55254 /* Product.swift in Sources */,
+				6014AAA92CB6308D00D55254 /* ProductListViewController.swift in Sources */,
 				6014AA772CB629DB00D55254 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
