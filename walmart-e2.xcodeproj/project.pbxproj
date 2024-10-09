@@ -147,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				603ABEA42CB645C300A38D13 /* helper */,
-				6014AAA62CB62F0B00D55254 /* product_detail */,
 				6014AAA52CB62EF200D55254 /* product_list */,
 			);
 			path = modules;
@@ -163,13 +162,6 @@
 				6014AAB32CB63D6900D55254 /* ProductListRouter.swift */,
 			);
 			path = product_list;
-			sourceTree = "<group>";
-		};
-		6014AAA62CB62F0B00D55254 /* product_detail */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = product_detail;
 			sourceTree = "<group>";
 		};
 		6014AAA72CB62FD000D55254 /* entities */ = {

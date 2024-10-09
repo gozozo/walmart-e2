@@ -13,6 +13,8 @@ class ProductListPresenter: ProductListPresenterProtocol {
     var interactor: ProductListInteractorProtocol?
     var router: ProductListRouterProtocol?
     
+    /// An array that holds the list of products.
+    /// This property is used to store and manage the products displayed in the product list.
     private var products: [Product] = []
     
     func fetchProducts() {

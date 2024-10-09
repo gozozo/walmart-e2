@@ -7,6 +7,10 @@
 
 import UIKit
 
+/// A custom table view cell used to display product information in a list.
+/// This cell is part of the product list module.
+/// 
+/// - Note: Ensure that this cell is registered with the table view before use.
 class ProductTableViewCell: UITableViewCell {
     
     @IBOutlet private weak var productImageView: UIImageView!
@@ -19,6 +23,9 @@ class ProductTableViewCell: UITableViewCell {
         self.accessoryType = .disclosureIndicator
     }
     
+    /// Configures the cell with the provided product information.
+    ///
+    /// - Parameter product: The `Product` object containing the details to be displayed in the cell.
     func configure(with product: Product) {
         productNameLabel.text = product.title
         productCategoryLabel.text = product.category
@@ -30,10 +37,11 @@ class ProductTableViewCell: UITableViewCell {
             }
         }
     }
-    
 }
 
 
+/// An extension of the `UIImage` class to add custom functionality or properties
+/// specific to the Walmart product list module.
 extension UIImage {
     static func from(url: URL, completion: @escaping (UIImage?) -> Void) {
         // Create a URL session

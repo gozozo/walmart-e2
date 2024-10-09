@@ -2,11 +2,14 @@
 //  ServiceManager.swift
 //  walmart-e2
 //
-//  Created by Personal on 08/10/24.
+//  Created by Luis Enrique Vazquez Escobar on 08/10/24.
 //
 
 import Foundation
 
+/// ServiceManager is responsible for handling network service requests.
+/// This class provides methods to perform network operations and manage
+/// the responses from various services.
 class ServiceManager {
     
     let baseURL = "https://fakestoreapi.com/products"
@@ -15,7 +18,13 @@ class ServiceManager {
     
     private init() {}
     
-    // Función para obtener todos los productos
+    
+    /// Fetches a list of products from the service.
+    /// 
+    /// - Parameter completion: A closure that gets called with the result of the fetch operation. 
+    ///   The closure takes a `Result` containing either an array of `Product` objects or an `Error`.
+    /// 
+    /// - Returns: Void
     func fetchProducts(completion: @escaping (Result<[Product], Error>) -> Void) {
         guard let url = URL(string: baseURL) else {
             completion(.failure(NSError(domain: "Invalid URL", code: 0, userInfo: nil)))

@@ -7,6 +7,11 @@
 
 import UIKit
 
+/// A view controller that manages the product list view.
+/// 
+/// This class is responsible for displaying a list of products to the user.
+/// It inherits from `UIViewController` and contains the necessary logic to
+/// handle the presentation and interaction with the product list.
 class ProductListViewController: UIViewController {
     
     var presenter: ProductListPresenterProtocol?
@@ -20,12 +25,18 @@ class ProductListViewController: UIViewController {
         presenter?.fetchProducts()
     }
     
+    /// Configures the table view with necessary settings and properties.
+    /// This includes setting delegates, registering cells, and any other
+    /// configurations required for the table view to function properly.
     private func configureTableView() {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: "ProductTableViewCell", bundle: nil), forCellReuseIdentifier: "ProductTableViewCell")
     }
     
+    /// Configures the navigation bar for the ProductListViewController.
+    /// This method sets up the appearance and behavior of the navigation bar,
+    /// including title, buttons, and other navigation-related elements.
     private func configureNavigationBar() {
         self.navigationController?.isNavigationBarHidden = true
     }
