@@ -20,6 +20,8 @@
 		6014AAB02CB63BE700D55254 /* ProductListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6014AAAF2CB63BE700D55254 /* ProductListProtocols.swift */; };
 		6014AAB22CB63CC900D55254 /* ProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6014AAB12CB63CC800D55254 /* ProductListViewController.xib */; };
 		6014AAB42CB63D6900D55254 /* ProductListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6014AAB32CB63D6900D55254 /* ProductListRouter.swift */; };
+		603ABEA62CB645E700A38D13 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603ABEA52CB645E700A38D13 /* ServiceManager.swift */; };
+		603ABEA82CB64D2C00A38D13 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 603ABEA72CB64D2C00A38D13 /* ProductTableViewCell.xib */; };
 		6096DE4B2CB63EC9006BBE9A /* ProductListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6096DE4A2CB63EC9006BBE9A /* ProductListPresenter.swift */; };
 		6096DE4D2CB63EDF006BBE9A /* ProductListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6096DE4C2CB63EDF006BBE9A /* ProductListInteractor.swift */; };
 /* End PBXBuildFile section */
@@ -59,6 +61,8 @@
 		6014AAAF2CB63BE700D55254 /* ProductListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListProtocols.swift; sourceTree = "<group>"; };
 		6014AAB12CB63CC800D55254 /* ProductListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListViewController.xib; sourceTree = "<group>"; };
 		6014AAB32CB63D6900D55254 /* ProductListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListRouter.swift; sourceTree = "<group>"; };
+		603ABEA52CB645E700A38D13 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		603ABEA72CB64D2C00A38D13 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
 		6096DE4A2CB63EC9006BBE9A /* ProductListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListPresenter.swift; sourceTree = "<group>"; };
 		6096DE4C2CB63EDF006BBE9A /* ProductListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +146,7 @@
 		6014AAA42CB62EE500D55254 /* modules */ = {
 			isa = PBXGroup;
 			children = (
+				603ABEA42CB645C300A38D13 /* helper */,
 				6014AAA62CB62F0B00D55254 /* product_detail */,
 				6014AAA52CB62EF200D55254 /* product_list */,
 			);
@@ -151,8 +156,8 @@
 		6014AAA52CB62EF200D55254 /* product_list */ = {
 			isa = PBXGroup;
 			children = (
-				6014AAAA2CB6367E00D55254 /* view */,
 				6014AAAF2CB63BE700D55254 /* ProductListProtocols.swift */,
+				6014AAAA2CB6367E00D55254 /* view */,
 				6096DE4C2CB63EDF006BBE9A /* ProductListInteractor.swift */,
 				6096DE4A2CB63EC9006BBE9A /* ProductListPresenter.swift */,
 				6014AAB32CB63D6900D55254 /* ProductListRouter.swift */,
@@ -180,9 +185,18 @@
 			children = (
 				6014AAB12CB63CC800D55254 /* ProductListViewController.xib */,
 				6014AAA82CB6308D00D55254 /* ProductListViewController.swift */,
+				603ABEA72CB64D2C00A38D13 /* ProductTableViewCell.xib */,
 				6014AAAB2CB637D500D55254 /* ProductTableViewCell.swift */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		603ABEA42CB645C300A38D13 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				603ABEA52CB645E700A38D13 /* ServiceManager.swift */,
+			);
+			path = helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6014AA7E2CB629DD00D55254 /* Assets.xcassets in Resources */,
+				603ABEA82CB64D2C00A38D13 /* ProductTableViewCell.xib in Resources */,
 				6014AA812CB629DD00D55254 /* Base in Resources */,
 				6014AAB22CB63CC900D55254 /* ProductListViewController.xib in Resources */,
 			);
@@ -325,6 +340,7 @@
 				6014AAAE2CB6380500D55254 /* Product.swift in Sources */,
 				6014AAA92CB6308D00D55254 /* ProductListViewController.swift in Sources */,
 				6014AA772CB629DB00D55254 /* SceneDelegate.swift in Sources */,
+				603ABEA62CB645E700A38D13 /* ServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

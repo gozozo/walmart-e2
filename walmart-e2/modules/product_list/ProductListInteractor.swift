@@ -9,4 +9,17 @@ import Foundation
 
 class ProductListInteractor: ProductListInteractorProtocol {
     var presenter: ProductListPresenterProtocol?
+    let serviceManager = ServiceManager.shared
+    
+    func fetchProducts() {
+        serviceManager.fetchProducts { [weak self] result in
+            switch result {
+            case .success(let products):
+                self?.presenter?.productsFetched(products: products)
+            case .failure(let error):
+                self?.presenter?.productsFetchFailed(error: error)
+            }
+        }
+        
+    }
 }

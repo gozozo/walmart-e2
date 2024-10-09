@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ProductTableViewCell" id="iN0-l3-epB" customClass="ProductTableViewCell" customModule="walmart_e2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="467" height="141"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qb9-S7-hUh">
+                    <rect key="frame" x="0.0" y="16" width="100" height="109"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="4wI-jb-fck"/>
+                        <constraint firstAttribute="height" priority="900" constant="110" id="cWZ-tm-tjT"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LkW-Wz-v26">
+                    <rect key="frame" x="108" y="16" width="335" height="38"/>
+                    <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="14"/>
+                    <color key="textColor" red="0.072629397679999999" green="0.072629397679999999" blue="0.072629397679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="men's clothing" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLw-56-Z7O">
+                    <rect key="frame" x="108" y="54.000000000000007" width="335" height="26.333333333333336"/>
+                    <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="12"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1,000.00" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSL-s5-syk">
+                    <rect key="frame" x="108" y="88.333333333333329" width="335" height="35"/>
+                    <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="16"/>
+                    <color key="textColor" red="0.072629397679999999" green="0.072629397679999999" blue="0.072629397679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Qb9-S7-hUh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="4wD-SV-ZkF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="BSL-s5-syk" secondAttribute="trailing" constant="24" id="BVd-7S-cuK"/>
+                <constraint firstItem="lLw-56-Z7O" firstAttribute="leading" secondItem="Qb9-S7-hUh" secondAttribute="trailing" constant="8" id="FQU-Mz-DCp"/>
+                <constraint firstItem="LkW-Wz-v26" firstAttribute="top" secondItem="Qb9-S7-hUh" secondAttribute="top" id="I8C-pd-hVI"/>
+                <constraint firstItem="BSL-s5-syk" firstAttribute="top" secondItem="lLw-56-Z7O" secondAttribute="bottom" constant="8" id="Lue-l9-Xq8"/>
+                <constraint firstAttribute="trailing" secondItem="LkW-Wz-v26" secondAttribute="trailing" constant="24" id="V6r-q5-j8l"/>
+                <constraint firstItem="BSL-s5-syk" firstAttribute="leading" secondItem="Qb9-S7-hUh" secondAttribute="trailing" constant="8" id="bdj-Qg-YsZ"/>
+                <constraint firstItem="LkW-Wz-v26" firstAttribute="leading" secondItem="Qb9-S7-hUh" secondAttribute="trailing" constant="8" id="dqb-1y-9ry"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lLw-56-Z7O" secondAttribute="trailing" constant="24" id="et5-Hq-gSc"/>
+                <constraint firstItem="Qb9-S7-hUh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="nKb-fr-ZmL"/>
+                <constraint firstItem="lLw-56-Z7O" firstAttribute="top" secondItem="LkW-Wz-v26" secondAttribute="bottom" id="yPh-HA-TwC"/>
+                <constraint firstAttribute="bottom" secondItem="Qb9-S7-hUh" secondAttribute="bottom" constant="16" id="zaY-H9-inA"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="productCategoryLabel" destination="lLw-56-Z7O" id="u3G-fh-0aQ"/>
+                <outlet property="productImageView" destination="Qb9-S7-hUh" id="0Uq-Ig-d7A"/>
+                <outlet property="productNameLabel" destination="LkW-Wz-v26" id="OPI-Vv-JIj"/>
+                <outlet property="productPriceLabel" destination="BSL-s5-syk" id="VgB-yC-Byf"/>
+            </connections>
+            <point key="canvasLocation" x="-440.45801526717554" y="-90.492957746478879"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -5,10 +5,40 @@
 //  Created by Luis Enrique Vazquez Escobar on 08/10/24.
 //
 
-import Foundation
+import UIKit
 
 class ProductListPresenter: ProductListPresenterProtocol {
+    
     weak var view: ProductListViewProtocol?
     var interactor: ProductListInteractorProtocol?
     var router: ProductListRouterProtocol?
+    
+    private var products: [Product] = []
+    
+    func fetchProducts() {
+        interactor?.fetchProducts()
+    }
+    
+    func productsFetched(products: [Product]) {
+        self.products = products
+        view?.reloadData()
+    }
+    
+    func productsFetchFailed(error: any Error) {
+        view?.showError(message: error.localizedDescription)
+    }
+    
+    func numberOfProducts() -> Int {
+        return products.count
+    }
+    
+    func product(at index: Int) -> Product {
+        return products[index]
+    }
+    
+    func navigateToProductDetail(at index: Int) {
+        guard let view = view as? UIViewController else { return }
+        let product = products[index]
+        router?.navigateToProductDetail(parent: view, product: product)
+    }
 }

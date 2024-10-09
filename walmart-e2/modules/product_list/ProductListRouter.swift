@@ -24,5 +24,9 @@ class ProductListRouter: ProductListRouterProtocol {
         
         return view
     }
+    
+    func navigateToProductDetail(parent: UIViewController, product: Product) {
+         // TODO: Implement navigation to product detail
+    }
 }
-   
+
