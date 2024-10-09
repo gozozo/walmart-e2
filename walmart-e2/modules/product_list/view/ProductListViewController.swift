@@ -9,7 +9,10 @@ import UIKit
 
 class ProductListViewController: UIViewController {
     
+    var presenter: ProductListPresenterProtocol?
+    
     @IBOutlet private weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
@@ -21,6 +24,9 @@ class ProductListViewController: UIViewController {
     }
 }
 
+extension ProductListViewController: ProductListViewProtocol {
+
+}
 
 extension ProductListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
